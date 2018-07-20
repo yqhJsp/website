@@ -1,0 +1,106 @@
+{
+"extEnable": true,
+"extAppid": "wxb1cb1cced82cacc4",
+"directCommit": false,
+"ext": {
+        "name": "官网小程序",
+        "appid":"wxb1cb1cced82cacc4",
+        "createUserId": 24
+},
+"extPages": {
+    "pages/site/index/index": {
+    "navigationBarTitleText": "官网首页"
+},
+"pages/site/products/products": {
+  "navigationBarTitleText": "产品服务"
+},
+"pages/site/caseList/caseList": {
+  "navigationBarTitleText": "案列展示"
+},
+"pages/site/video/video": {
+  "navigationBarTitleText": "视频中心"
+},
+"pages/site/call/call": {
+  "navigationBarTitleText": "联系我们"
+},
+"pages/site/map/map": {
+  "navigationBarTitleText": "位置信息"
+},
+"pages/site/consulting/consulting": {
+  "navigationBarTitleText": "立即咨询"
+},
+"pages/site/materialsDetail/materialsDetail": {
+  "navigationBarTitleText": "详情"
+},
+"pages/site/detail/detail": {
+  "navigationBarTitleText": "详情"
+}
+,
+"pages/site/productDetail/productDetail": {
+  "navigationBarTitleText": "详情"
+}
+},
+  "pages": [
+    "pages/site/index/index",
+    "common/common",
+    "pages/site/detail/detail",
+    "pages/site/consulting/consulting",
+    "pages/site/call/call",
+    "pages/site/products/products",
+    "pages/site/productDetail/productDetail",
+    "pages/site/video/video",
+    "pages/site/materialsDetail/materialsDetail",
+    "pages/site/map/map",
+    "pages/site/caseList/caseList"
+  ],
+  "window": {
+"backgroundTextStyle": "white",
+"navigationBarBackgroundColor": "#000000",
+"navigationBarTitleText": "官网小程序",
+"navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#292929",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/site/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home-in.png"
+      },
+      {
+        "pagePath": "pages/site/products/products",
+        "text": "产品服务",
+        "iconPath": "images/tabbar/product.png",
+        "selectedIconPath": "images/tabbar/product-in.png"
+      },
+      {
+        "pagePath": "pages/site/caseList/caseList",
+        "text": "案列展示",
+        "iconPath": "images/tabbar/case.png",
+        "selectedIconPath": "images/tabbar/case-in.png"
+      },
+      {
+        "pagePath": "pages/site/video/video",
+        "text": "视频中心",
+        "iconPath": "images/tabbar/video.png",
+        "selectedIconPath": "images/tabbar/video-in.png"
+      },
+      {
+        "pagePath": "pages/site/call/call",
+        "text": "联系我们",
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user-in.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 5000,
+    "uploadFile": 5000,
+    "downloadFile": 5000
+  }
+}

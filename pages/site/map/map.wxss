@@ -1,0 +1,15 @@
+/* pages/site/map/map.wxss */
+.maps{
+width:100%;
+height: 100%;        
+}
+.mapsite{
+ width: 100%;
+ height: 1000rpx;       
+}
+.mapInfo{
+ font-size:30rpx;
+ color:#333;
+ height: 100rpx; 
+ padding:15px          
+}

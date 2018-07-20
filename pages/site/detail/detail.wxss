@@ -1,0 +1,19 @@
+/* pages/detail/detail.wxss */
+.session{
+padding:0;        
+}
+.title{
+ margin-top:10rpx;
+ font-size:48rpx;
+ padding: 0 20rpx;
+ margin-bottom:40rpx  
+}
+.detail{
+margin-top:0
+}
+.detail view{
+ font-size:28rpx;
+}
+image{
+ margin: 0;
+}

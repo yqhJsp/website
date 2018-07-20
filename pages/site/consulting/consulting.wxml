@@ -1,0 +1,44 @@
+<!--立刻咨询-->
+<view class='row'>
+<view class='coverImg'>
+<image src='{{fileDomain}}{{main.counselImg}}' mode="widthFix"></image>
+</view>
+<view class='consulTitle'>
+<label class='clable'>如果留下您的信息,我们会尽快与您联系</label>
+</view>
+        <view class='order-detail'>    
+                <view class='order_table'>
+                        <view class='ordertr borders'>
+                                <view class='ordertd'>
+                                      <input  placeholder='您的姓名' bindinput='nameInput'></input>
+                                </view>
+                        </view>
+                        <view class='ordertr borders'>
+                                <view class='ordertd'>
+                                      <input  placeholder='您的电话'  bindinput='phoneInput' type="number"></input>
+                                </view>
+                        </view>
+                </view>
+        </view>
+        <view class='order-detail tip'>
+                <view class='order_table'>
+                        <view class='ordertr'>
+                                <view class='ordertd'>
+                
+                                        <textarea maxlength="150" class='refund-desc' bindinput="consultInput" placeholder='咨询留言'></textarea>
+                                </view>
+                        </view>
+                </view>
+        </view>
+        <!--保存-->
+        <view class='order-detail'>
+                <view class='order_table'>
+                        <view class='ordertr'>
+                                <view class='ordertd'>
+                                        <button class='mod_btn'  bindtap='save_info' style='background:#{{main.consultBtnColor}}'>确认提交</button>
+                                </view>
+                        </view>
+                </view>
+        </view>
+
+</view>

@@ -1,0 +1,11 @@
+<!--pages/site/materialsDetail/materialsDetail.wxml-->
+<include src="../../../common/common.wxml"></include>
+<view class='session'>
+<!-- <view class='title'>
+<label class='bgtitle'>{{materials.title}}</label>
+<view class='subtitle'>{{materials.subhead}}</view>
+</view> -->
+<view class='detail'>
+ <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+</view>

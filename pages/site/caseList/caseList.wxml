@@ -1,0 +1,15 @@
+<!--pages/site/caseList/caseList.wxml-->
+<import src="../template/template" />
+<view class='session'>
+        <view class='listBox'>
+                <block wx:for="{{list}}" wx:key="key"  wx:for-index="index1" wx:for-item="item1">
+              <template data="{{item1,fileDomain}}" wx:if="{{item.showType==1001}}" is="indexColumns1"></template>
+                                                <template data="{{item1,fileDomain}}" wx:if="{{item1.showType==1002}}" is="indexColumns7"></template>
+                                                <template data="{{item1,fileDomain}}" wx:if="{{item1.showType==1003}}" is="indexColumns3"></template>
+                                                <template data="{{item1,fileDomain}}" wx:if="{{item1.showType==1004}}" is="indexColumns4"></template>
+                                                  <template data="{{item1,fileDomain}}" wx:if="{{item1.showType==1007}}" is="indexColumns8"></template>
+ <template data="{{item1,fileDomain,item,index1}}" wx:if="{{item1.showType==1005}}" is="indexColumns5"></template>
+<template data="{{item1,fileDomain}}" wx:if="{{item1.showType==1006}}" is="indexColumns6"></template>
+        </block>      
+        </view>
+</view>

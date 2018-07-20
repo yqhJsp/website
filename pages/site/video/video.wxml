@@ -1,0 +1,23 @@
+<!--视频列表-->
+<import src="../template/template" />
+<view class='session'>
+  <view class='listBox'>
+    <block wx:for="{{list}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+      <view class='box' id='{{item.id}}'>
+        <view class='boxImg'>
+          <template data="{{item,fileDomain,index,playIndex}}" wx:if="{{item.type==1}}" is="video_1"></template>
+          <template data="{{item,fileDomain,index,playIndex}}" wx:if="{{item.type==2}}" is="video_2"></template>
+          <view id="{{ index }}" class="cover" style="display: {{ playIndex == index ? 'none' : 'block' }};" bindtap="videoPlay">
+            <image class="coverImg" src="{{fileDomain}}{{item.image}}" mode="scaleToFill">
+              <image class="playImg" src="{{fileDomain}}{{item.image}}" mode="scaleToFill"></image>
+            </image>
+          </view>
+        </view>
+        <view class='boxcoent'>
+          <view>{{item.title}}</view>
+          <view class='subhead'>{{item.subhead}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

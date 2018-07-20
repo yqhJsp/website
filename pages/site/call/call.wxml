@@ -1,0 +1,37 @@
+<!--pages/site/call/call.wxml-->
+<view class="session">
+<image class='bgCall' src="{{fileDomain}}{{info.dbImg}}" mode="widthFix" ></image>
+        <view class="userinfo">
+                <!-- <image class="userinfo-avatar" src="{{fileDomain}}{{info.logoUrl}}" background-size="cover"></image> -->
+                <text class="userinfo-nickname">{{info.title}}</text>
+                <view class="account-bg"></view>
+        </view>
+        <view class="line"></view>
+        <view class="person-list">
+                <view class="list-item" bindtap='goCall' data-phone="{{info.phone}}">
+                <label class='fa fa-phone'></label>
+                        <text class="item-text">{{info.phone}}</text>
+                        <image class="item-image" src="/images/indexImg/icon-arrow.png"></image>
+                </view>
+                <view class="person-line"></view>
+                <view class="list-item">
+                 <label class='fa fa-envelope-square'></label>
+                        <text class="item-text">{{info.qq}}</text>
+                        <image class="item-image" src="/images/indexImg/icon-arrow.png"></image>
+                </view>
+                <view class="person-line"></view>
+                <view class="list-item">
+                 <label class='fa fa-envelope-o'></label>
+                        <text class="item-text">{{info.email}}</text>
+                        <image class="item-image" src="/images/indexImg/icon-arrow.png"></image>
+                </view>
+              <view class="person-line"></view>
+                <view class="list-item" bindtap='getlocation'>
+                <label><image src='/images/indexImg/ad.png' class='adIcon'></image></label>
+                        <text class="item-text">{{info.address}}</text>
+                        <view class="item-map" bindtap='getlocation'> 〉 </view>
+                </view>
+                 <view class="person-line"></view>
+        </view>
+        <view class="separate"></view>
+</view>

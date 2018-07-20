@@ -1,0 +1,26 @@
+/* pages/site/materialsDetail/materialsDetail.wxss */
+.session{
+padding:0;        
+}
+.title{
+ margin-top:5rpx;
+ padding:10rpx 20rpx;
+}
+.title .bgtitle{
+  font-size:48rpx;
+}
+.title .subtitle{
+  font-size:26rpx;
+  margin-top:10rpx;
+  color:#999
+}
+.detail{
+ margin-top:0;
+ padding-top:0 
+}
+.detail view{
+ font-size:28rpx;   
+}
+.detail view{
+ margin-top:0     
+}
